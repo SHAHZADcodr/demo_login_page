@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:sans-serif;
+        }
+body{
+    background-color:#485460;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:60rem;
+}
+.login-page{
+    width:25rem;
+    background-color:#485460;
+    color:#fff;
+    border-radius:1rem;
+    padding: 2rem 2rem;
+    border:0.3rem solid white;
+    box-shadow:1.9rem 0 3rem;
+
+
+}
+.login-page h1{
+    font-size:2rem;
+    text-align:center;
+}
+.login-page .input-box{
+    width:100%;
+    height:3rem;
+    margin: 3rem 0;
+    position:relative;
+}
+.input-box input{
+ width:100%;
+ height:100%;
+ background:transparent;
+ border:none;
+ outline:none;
+ border:0.1rem solid black;
+ border-radius:1.5rem;
+ font-size:1rem;
+ color:#fff;
+ padding:1.5rem 3rem 1.5rem 1.5rem;
+}
+.input-box input::placeholder{
+    color:#fff;
+}
+.input-box i{
+    position:absolute;
+    right:1.1rem;
+    top:50%;
+    transform:translateY(-50%)
+}
+.login-page .forget{
+    display:flex;
+    justify-content:space-between;
+    font-size:1rem;
+    margin:-2rem 0 1rem;
+}
+.forget label input{
+    color:#fff;
+    text-decoration:none;
+}
+.forget a:hover{
+    text-decoration:underline;
+}
+.login-page .btn{
+    width:100%;
+    height:3.5rem;
+    background:#fff;
+   border:none;
+outline:none;
+border-radius:3.4rem;
+box-shadow:0 0 0.7rem #fff;
+cursor:pointer;
+font-size:1rem;
+color:#333;
+font-weight:4rem;
+}
+.login-page .register{
+    font-size:1rem;
+    text-align:center;
+   margin:1.5rem 0 1rem;
+}
+.register p a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:5rem;
+}
+.register p a:hover{
+    text-decoration:underline;
+}
+
+    </style>
+</head>
+<body>
+    <div  class="login-page">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+            <input type="text" placeholder="Username" required>
+            <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" 
+                placeholder="Password"required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="forget">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button class="btn" type="submit">Login</button>
+            <div class="register">
+              <p>Don't have an account? <a href="#">Register</a> </p>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
